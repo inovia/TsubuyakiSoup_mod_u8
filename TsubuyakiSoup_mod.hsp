@@ -235,13 +235,14 @@ return stat
 	sdim rawtext,512
 	sdim p2,512
 	sdim picname,256
+	status = 0
 	repeat p3
 		exist p1(cnt)
-		if strsize <= 0:return -2
+		if strsize <= 0:status = -2:break
 	
 		picname = p1(cnt)
 		execRestApi "media/upload.json", picname, METHOD_POST
-		if stat != 200 :return -1
+		if stat != 200 :status = -1:break
 		
 		rawtext = "["+getResponseBody()+"]"
 		json_sel rawText
@@ -251,7 +252,7 @@ return stat
 	loop
 	p2 = strmid(p2, 0, strlen(p2)-1)
 
-return 0
+return status
 
 #global
 
