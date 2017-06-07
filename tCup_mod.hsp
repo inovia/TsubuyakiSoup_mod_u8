@@ -4,11 +4,11 @@
 //    HSPからTwitterを操作するモジュール。
 //    OAuthに対応。API1.1へ対応。画像付きツイート対応。
 //----------------------------------------------------------------------
-//  Version : 2.1
+//  Version : 2.2
 //  Author : Takaya
 //	Modification : kanahiron
 //  CreateDate : 10/07/29
-//  LastUpdate : 16/06/17
+//  LastUpdate : 17/06/07
 //======================================================================
 /*  [HDL module infomation]
 
@@ -16,10 +16,10 @@
 TsubuyakiSoup
 
 %ver
-2.1
+2.2
 
 %date
-2016/06/17
+2017/06/07
 
 %note
 TsubuyakiSoup_mod.asをインクルードすること。
